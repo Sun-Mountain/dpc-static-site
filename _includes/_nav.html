@@ -11,13 +11,14 @@ aria-controls="topnav-wrap" aria-label="Close menu">
         </svg>
       </button>
       <ul class="topnav">
-        <li class="topnav__item">
-          <a href="" class="topnav__link">Documentation</a>
-        </li>
-  
-        <li class="topnav__item">
-          <a href="" class="topnav__link">Support</a>
-        </li>
+        {% for item in site.global_nav %}
+          {% assign pages = site.pages | where:"id",item.id %}
+          {% for p in pages %}
+            <li class="topnav__item">
+              <a class="topnav__link" href="{{ p.url }}"> {{item.title}} </a>
+            </li>
+          {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </div>

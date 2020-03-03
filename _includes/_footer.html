@@ -10,9 +10,12 @@
       <div class="ds-l-col--12 ds-l-sm-col--4 ds-l-lg-col--3 ds-u-margin-bottom--2">
         <h2 class="ds-h4">Data at the Point of Care</h2>
         <ul class="ds-c-list ds-c-list--bare ds-u-font-size--small">
-          <li><a href="">Documentation</a></li>
-          <li><a href="">Frequently asked questions</a></li>
-          <li><a href="">Terms of Service</a></li>
+          {% for item in site.footer_nav %}
+            {% assign pages = site.pages | where:"id",item.id %}
+            {% for p in pages %}
+              <li><a href="{{ p.url }}"> {{item.title}} </a></li>
+            {% endfor %}
+          {% endfor %}
           <li><a target="_blank" href="https://github.com/CMSgov/dpc-app">DPC on GitHub</a></li>
           <li><a target="_blank" href="https://groups.google.com/d/forum/dpc-api">DPC Google Group</a></li>
         </ul>
