@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data at the Point of Care</title>
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-</head>
-<header>
-  {% include _nav.html %}
-</header>
-<body>
+  {% include head.html %}
 
-  {{ content }}
+  <body class="">
 
-  {% include _footer.html %}
-</body>
-<script src="/assets/javascript/accordions.js"></script>
-<script src="/assets/javascript/modals.js"></script>
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ '/assets/js/accordions.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/modals.js' | relative_url }}"></script>
+  </body>
+
 </html>
