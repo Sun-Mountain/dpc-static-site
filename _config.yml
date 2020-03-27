@@ -32,13 +32,13 @@ global_nav:
   - title: Home
     id: home
   - title: Documentation
-    id: docs
+    id: guide
   - title: Support
     id: support
 
 footer_nav:
   - title: Documentation
-    id: docs
+    id: guide
   - title: Frequently asked questions
     id: faq
   - title: Terms of Service
