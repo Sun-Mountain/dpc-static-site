@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  font-family: $font-sans;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -52,6 +53,14 @@ blockquote {
   padding-left: $spacer-2;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .ds-c-choice + label a {
   margin-left: 1ch;
 }
@@ -68,4 +77,13 @@ blockquote {
   max-width: none;
   padding: $spacer-2;
   resize: none;
+}
+
+.header-separator {
+  background-color: #323a45;
+  padding: 8px;
+}
+
+#main {
+  background-color: #F6F6F6;
 }
