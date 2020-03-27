@@ -31,8 +31,6 @@ cssurl: /assets/css/static-main.css
 global_nav:
   - title: Home
     id: home
-  - title: Documentation
-    id: docs
   - title: Support
     id: support
 

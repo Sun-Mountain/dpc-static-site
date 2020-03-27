@@ -1,5 +1,5 @@
 ---
-layout: page-contact
+layout: home
 title: Support
 permalink: /support
 id: support
