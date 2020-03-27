@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="page__banner">
+  {% if page.banner_title %}
+    <h1>{{ page.banner_title }}</h1>
+  {% endif %}
+</section>
+
+<section class="ds-l-container ds-u-padding-top--7 ds-u-margin-bottom--7" id="main">
+  {{ content }}
+</section>
