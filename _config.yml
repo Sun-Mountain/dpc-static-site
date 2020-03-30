@@ -32,7 +32,7 @@ global_nav:
   - title: Home
     id: home
   - title: Documentation
-    id: guide
+    id: intro
   - title: Support
     id: support
 
@@ -43,6 +43,14 @@ footer_nav:
     id: faq
   - title: Terms of Service
     id: tos
+
+docs_nav:
+  - title: Intro
+    id: intro
+  - title: Sandbox
+    id: sandbox
+  - title: Production
+    id: prod
 
 # Build settings
 markdown: kramdown
