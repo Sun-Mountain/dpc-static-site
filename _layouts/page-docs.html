@@ -1,0 +1,21 @@
+---
+layout: page-info
+---
+
+<div>
+  <ul>
+    {% for item in site.global_nav %}
+    {% assign pages = site.pages | where:"id",item.id %}
+    {% for p in pages %}
+      <li>
+        <a href="{{ p.url }}"> {{item.title}} </a>
+      </li>
+    {% endfor %}
+  {% endfor %}
+  </ul>
+</div>
+
+
+<div>
+  {{content}}
+</div>
