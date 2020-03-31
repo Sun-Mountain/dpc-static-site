@@ -1,0 +1,14 @@
+.docs__container {
+  border: 3px solid $color-primary-darker;
+}
+
+.docsnav {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+.docsnav__item {
+  display: inline;
+  padding: 0;
+}
