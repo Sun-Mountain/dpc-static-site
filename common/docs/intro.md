@@ -2,7 +2,7 @@
 layout: page-docs
 title: New
 banner_title: Documentation
-permalink: /docs-intro
+permalink: /docs/intro
 id: intro
 ---
 # Intro
