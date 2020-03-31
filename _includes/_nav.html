@@ -1,6 +1,10 @@
 <nav class="navbar" id="navbar">
   <a class="site-logo" href="/">
+<<<<<<< HEAD
     <img src="{{ 'assets/img/top-nav-heart.svg' | relative_url }}" alt="Heart logo"> <span class="site-logo-text">Data at the Point of Care</span>
+=======
+    <img src="{{ site.logourl | relative_url }}" alt="Heart logo"> <span class="site-logo-text">Data at the Point of Care</span>
+>>>>>>> master
   </a>
 
   <div class="topnav-wrap" id="topnav-wrap">
@@ -19,7 +23,12 @@ aria-controls="topnav-wrap" aria-label="Close menu">
             </li>
           {% endfor %}
         {% endfor %}
+          <li class="topnav__item topnav__item--buttons ds-u-padding-right--1">
+            <a href="#" class="ds-c-button">Log in</a>
+          </li>
+          <li class="topnav__item topnav__item--buttons">
+            <a href="#" class="ds-c-button ds-c-button--primary">Request Access</a>
+          </li>
       </ul>
     </div>
-  </div>
 </nav>
