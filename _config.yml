@@ -39,7 +39,7 @@ global_nav:
 
 footer_nav:
   - title: Documentation
-    id: guide
+    id: docs
   - title: Frequently asked questions
     id: faq
   - title: Terms of Service
