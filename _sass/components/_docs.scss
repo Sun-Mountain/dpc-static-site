@@ -1,8 +1,7 @@
-#docs__container {
-  border: 3px solid $color-primary-darker;
+.docs {
 }
 
-.docsnav {
+#docsnav {
   list-style:none;
   margin: 0;
   padding: 0;
@@ -11,4 +10,15 @@
 .docsnav__item {
   display: inline;
   padding: 0;
+}
+
+.docsnav__link {
+
+}
+
+.docs__content {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-gray-light;
+  border-left: 1px solid $color-gray-light;
+  border-right: 1px solid $color-gray-light;
 }

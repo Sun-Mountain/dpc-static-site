@@ -5,12 +5,13 @@ layout: page-info
   <div>
     <section>
       <div class="ds-l-col--12">
-        <ul class="docsnav">
+        <ul id="docsnav">
           {% for item in site.docs_nav %}
             {% assign pages = site.pages | where:"id",item.id %}
             {% for p in pages %}
               <li class="docsnav__item">
-                <a class="" href="{{ p.url }}"> {{item.title}} </a>
+                {% assign prefix = page.id | split: "-" %}
+                <a id="docsnav__link{% if p.id contains prefix[0] || p.id == page.id %} active{% endif %}" href="{{ p.url }}"> {{item.title}} </a>
               </li>
             {% endfor %}
           {% endfor %}
@@ -18,8 +19,8 @@ layout: page-info
       </div>
     </section>
     
-    <section class="">
-      <div class="box__content ds-l-col--12">
+    <section class="docs__content">
+      <div class="ds-l-col--12">
         {{content}}
       </div>
     </section>
