@@ -2,8 +2,8 @@
 layout: page-info
 title: New
 banner_title: Documentation
-permalink: /guide
-id: guide
+permalink: /docs
+id: docs
 sections:
   - Accessing and working with the API
   - Bulk Data
