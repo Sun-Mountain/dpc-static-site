@@ -3,11 +3,10 @@ layout: default
 ---
 
 <section class="page__banner">
-  {% if page.banner_title %}
-    <h1>{{ page.banner_title }}</h1>
-  {% endif %}
+  <h1>{{ page.banner_title }}</h1>
 </section>
-
-<section class="ds-l-container ds-base ds-u-margin-bottom--7">
-      {{ content }}
-</section>
+<div id="main">
+  <section class="ds-l-container ds-base ds-u-padding-bottom--7" id="main">
+    {{ content }}
+  </section>
+</div>

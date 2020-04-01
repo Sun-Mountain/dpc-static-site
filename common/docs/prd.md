@@ -1,6 +1,6 @@
 ---
 layout: page-docs
-title: New
+title: Documentation
 banner_title: Documentation
 permalink: /doc/prod
 id: prod

@@ -1,25 +1,27 @@
 ---
 layout: page-info
 ---
-<div id="docs__container">
-  <section>
-    <div class="ds-l-col--12">
-      <ul class="docsnav">
-        {% for item in site.docs_nav %}
-          {% assign pages = site.pages | where:"id",item.id %}
-          {% for p in pages %}
-            <li class="docsnav__item">
-              <a class="" href="{{ p.url }}"> {{item.title}} </a>
-            </li>
+<div class="ds-u-padding-top--7 docs">
+  <div>
+    <section>
+      <div class="ds-l-col--12">
+        <ul class="docsnav">
+          {% for item in site.docs_nav %}
+            {% assign pages = site.pages | where:"id",item.id %}
+            {% for p in pages %}
+              <li class="docsnav__item">
+                <a class="" href="{{ p.url }}"> {{item.title}} </a>
+              </li>
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  
-  <section>
-    <div class="ds-l-col--12">
-      {{content}}
-    </div>
-  </section>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="">
+      <div class="box__content ds-l-col--12">
+        {{content}}
+      </div>
+    </section>
+  </div>
 </div>
